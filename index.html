@@ -1,9 +1,106 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <script></script>
+  <title>Luis' Portfolio</title>
+</head>
 
 <body>
-  <h1>L. Martinez</h1>
-  <p>I'm learning how to use github pages</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+  <header>
+    <nav class="desktop">
+      <h2 class="logo">Luis Martinez</h2>
+      <ul class="nav-items">
+        <li class="nav-item"><a href="#">About Me</a></li>
+        <li class="nav-item"><a href="#">Projects</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <nav class="mobile">
 
+    </nav>
+  </header>
+  <main>
+    <section class="about-me">
+      <div class="about-me-container">
+        <div class="text-container">
+          <h2>About Me</h2>
+          <p>Hello! My name is Luis, and I am a junior front-end developer. Although I recently started in this field, I
+            am eager to improve my skills and continue learning as much as possible.</p>
+          <p>I am currently studying software development engineering, and I am seeking to gain experience in
+            programming and the field by working as a front-end developer.</p>
+          <p>In my free time, I enjoy reading manga and playing video games. When I play, I often think about how the
+            user interface was coded and how I could recreate it myself. I also wonder how the game was developed
+            overall. Additionally, I am taking courses to improve my abilities, learn new programming languages, and
+            explore new technologies.</p>
+        </div>
+        <div class="img-container">
+          <img src="./resources/img/myself.jpg" alt="Picture of myself">
+        </div>
+        <div class="skills">
+          <h3>Skills</h3>
+          <div class="skill-img">
+            <img src="./resources/img/html.png" alt="html">
+          </div>
+          <div class="skill-img">
+            <img src="./resources/img/css.png" alt="css">
+          </div>
+          <div class="skill-img">
+            <img src="./resources/img/document.png" alt="javascript">
+          </div>
+          <div class="skill-img">
+            <img src="./resources/img/git.png" alt="git">
+          </div>
+          <div class="skill-img">
+            <img src="./resources/img/github.png" alt="github">
+          </div>
+          <div class="skill-img">
+            <img src="./resources/img/media.png" alt="java">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="project-container">
+        <details class="project">
+          <summary class="project-title">
+            <h3>Repaired broken CSS</h3>
+          </summary>
+          <h4>Before</h4>
+          <div class="img-container">
+            <img src="./resources/img/broken_css.png">
+          </div>
+          <h4>After</h4>
+          <div class="image-container">
+            <img src="./resources/img/fixed_css.png">
+          </div>
+          <p>I was given a HTML and CSS document, my job was to fix and make responsive the CSS of the website</p>
+        </details>
+      </div>
+      <div class="project-container">
+        <details class="project">
+          <summary class="project-title">
+            <h3>Bussiness page</h3>
+          </summary>
+          <div class="img-container">
+            <img src="./resources/img/business-page.png">
+          </div>
+          <p>I made a fictional business page from scratch</p>
+        </details>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="contact-button">
+      <button id="contact">Contact me!</button>
+    </div>
+    <div class="page-info">
+      <p>Made with HTML, CSS and JS</p>
+    </div>
+  </footer>
+</body>
 </html>
