@@ -1,0 +1,181 @@
+/*Universal Styles*/
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    width: 100%;
+    color: #D7DFF7;
+    background-color: #152552;
+}
+
+.main-content {
+    position: relative;
+    top: 5.5rem;
+}
+
+.image-container {
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    display: block;
+  }
+
+.subtitulo {
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background-color: #05133D;
+}
+
+header .container {
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #9EAACF;
+}
+
+header .menu {
+    float: right;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding-left: 2rem;
+}
+
+/* Banner */
+
+#nosotros {
+    background-image: url(../img/banner-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+#nosotros .content {
+    background-color: #9EAACF;
+    color: #05133D;
+    opacity: 0.5;
+    padding: 1rem;
+}
+
+#nosotros .titulo {
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#nosotros .info {
+    margin: auto;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Experiencias */
+
+
+#experiencias .content {
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#experiencias .exp-content {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    height: 20rem;
+}
+
+#experiencias .img-container {
+    
+    overflow: hidden;
+    width: 35%;
+}
+
+#experiencias .img-container img {
+    max-height: 100%;
+    width: auto;
+    display: block;
+}
+
+#experiencias .exp-info {
+    width: 65%;
+    padding: 1rem;
+    text-align: center;
+}
+
+#experiencias .exp-info h3 {
+    margin-bottom: 1rem;
+}
+
+/* Equipo */
+
+#equipo .equipo-container {
+    width: 98%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+#equipo .persona {
+    width: 30%;
+    
+}
+
+#equipo .img-container {
+    overflow: hidden;
+    height: 15rem;
+}
+
+#equipo .img-container img {
+    max-height: 100%;
+    width: auto;
+    display: block;
+    margin: auto;
+}
+
+/*Footer*/
+footer {
+    padding: 3rem 1.5rem;
+    background-color: #D7DFF7;
+    color: #152552;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .copyright {
+    text-align: right;
+}
