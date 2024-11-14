@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
   <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
   <script></script>
   <title>Luis' Portfolio</title>
 </head>
@@ -15,7 +18,7 @@
     <nav class="desktop">
       <h2 class="logo">Luis Martinez</h2>
       <ul class="nav-items">
-        <li class="nav-item"><a href="#">About Me</a></li>
+        <li class="nav-item"><a href="#">About me</a></li>
         <li class="nav-item"><a href="./projects.html">Projects</a></li>
         <li class="nav-item"><a href="./contact.html">Contact</a></li>
       </ul>
@@ -30,19 +33,17 @@
         <div class="text-container">
           <h2>About Me</h2>
           <p>Hello! My name is Luis, and I am a junior front-end developer. Although I recently started in this field, I
-            am eager to improve my skills and continue learning as much as possible.</p>
+            am eager to improve my skills and continue learning as much as possible.<br><br></p>
           <p>I am currently studying software development engineering, and I am seeking to gain experience in
-            programming and the field by working as a front-end developer.</p>
+            programming and the field by working as a front-end developer.<br><br></p>
           <p>In my free time, I enjoy reading manga and playing video games. When I play, I often think about how the
             user interface was coded and how I could recreate it myself. I also wonder how the game was developed
             overall. Additionally, I am taking courses to improve my abilities, learn new programming languages, and
             explore new technologies.</p>
         </div>
-        <div class="img-container">
-          <img src="./resources/img/myself.jpg" alt="Picture of myself">
-        </div>
         <div class="skills">
-          <h3>Skills</h3>
+          <h2>Skills</h2>
+          <div class="skill-images">
           <div class="skill-img">
             <img src="./resources/img/html.png" alt="html">
           </div>
@@ -63,9 +64,11 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
     <section class="projects">
       <div class="project-container">
+        <h2>My projects</h2>
         <details class="project">
           <summary class="project-title">
             <h3>Repaired broken CSS</h3>
@@ -75,7 +78,7 @@
             <img src="./resources/img/broken_css.png">
           </div>
           <h4>After</h4>
-          <div class="image-container">
+          <div class="img-container">
             <img src="./resources/img/fixed_css.png">
           </div>
           <p>I was given a HTML and CSS document, my job was to fix and make responsive the CSS of the website</p>
@@ -93,13 +96,13 @@
         </details>
       </div>
       <div class="see-more">
-        <p>If you want to watch my projects more in detail, <a href="#">click here!</a></p>
+        <p>If you want to watch my projects more in detail, <a href="./projects.html">click here!</a></p>
       </div>
     </section>
   </main>
   <footer>
     <div class="contact-button">
-      <button id="contact">Contact me!</button>
+      <a href="./contact.html">Contact me!</a>
     </div>
     <div class="page-info">
       <p>Made with HTML, CSS and JavaScript</p>
