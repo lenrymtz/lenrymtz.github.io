@@ -30,7 +30,7 @@ nav {
 }
 
 .logo {
-    font-size: Merryweather, serif;
+    font-size: "Merryweather", serif;
     font-weight: 500;
     color: #A578BB;
     font-size: 3rem;
@@ -64,6 +64,57 @@ nav {
     color: #E4E2E5;
 }
 
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.9rem;
+        padding-left: 1rem;
+    }
+
+    .menu-button img {
+        max-width: 1.8rem;
+        padding-right: 0.5rem;
+        right: 0;
+    }    
+    
+    .hid-nav-items {
+        position: absolute;
+        z-index: 10;
+        display: block;
+        top: 2.5rem;
+        right: 0;
+        background-color: #A578BB;
+        border: 1px solid #220033;
+    }
+
+    #hid-menu {
+        display: none;
+    }
+
+    .hid-nav-items li {
+        border-bottom: 1px solid #220033;
+    }
+
+    .hid-nav-items a {
+        font-family: "Noto Sans", serif;
+        line-height: 1.5rem;
+        text-decoration: none;
+        color: #220033;
+    }
+} 
+
 
 main {
     max-width: 1000px;
@@ -82,7 +133,7 @@ main {
 }
 
 .text-container {
-    text-align: justify;
+    text-align: left;
     letter-spacing: 0.5px;
     line-height: 20px;
     font-family: "Noto Sans", serif;
@@ -177,6 +228,33 @@ summary::before {
     font-family: "Noto Sans", serif;
 }
 
+#back-button {
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+
+    main {
+        margin-top: 3rem;
+    }
+    
+    .about-me-container {
+        flex-direction: column;
+    }
+
+    .skills {
+        margin-top: 2rem;
+    }
+
+    .skill-img {
+        height: 80px;
+    }
+}
+
 footer {
     margin-top: auto;
     background-color: #4F2066;
@@ -215,4 +293,23 @@ footer {
 
 .page-info p {
     color: #E4E2E5;
+}
+
+@media only screen and (max-width: 700px) {
+    footer {
+        display: block;
+        height: 60px;
+    }
+
+    .contact-button {
+        margin: auto;
+    }
+    
+    .page-info {
+        margin: auto;
+    }
+
+    .page-info p {
+        line-height: 2.5rem;
+    }
 }

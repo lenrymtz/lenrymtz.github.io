@@ -6,6 +6,7 @@
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/contact.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="./resources/js/script.js" defer></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Contact info</title>
@@ -21,7 +22,17 @@
           </ul>
         </nav>
         <nav class="mobile">
-    
+          <h2 class="logo">Luis Martinez</h2>
+          <div class="hid-menu" id="hid-menu">
+            <ul class="hid-nav-items">
+              <li class="hid-nav-item"><a href="./index.html">About me</a></li>
+                <li class="hid-nav-item"><a href="./projects.html">Projects</a></li>
+                <li class="hid-nav-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="menu-button" id="menu-button" onclick="displayMenu()">
+            <img src="./resources/img/menu.png">
+          </div>
         </nav>
     </header>
     <main>

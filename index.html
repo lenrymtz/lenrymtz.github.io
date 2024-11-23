@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-  <script></script>
+  <script src="./resources/js/script.js" defer></script>
   <title>Luis' Portfolio</title>
 </head>
 
@@ -24,7 +24,17 @@
       </ul>
     </nav>
     <nav class="mobile">
-
+      <h2 class="logo">Luis Martinez</h2>
+      <div class="hid-menu" id="hid-menu">
+        <ul class="hid-nav-items">
+          <li class="hid-nav-item"><a href="#">About me</a></li>
+          <li class="hid-nav-item"><a href="./projects.html">Projects</a></li>
+          <li class="hid-nav-item"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="menu-button" id="menu-button" onclick="displayMenu()">
+        <img src="./resources/img/menu.png">
+      </div>
     </nav>
   </header>
   <main>
@@ -32,14 +42,11 @@
       <div class="about-me-container">
         <div class="text-container">
           <h2>About Me</h2>
-          <p>Hello! My name is Luis, and I am a junior front-end developer. Although I recently started in this field, I
-            am eager to improve my skills and continue learning as much as possible.<br><br></p>
-          <p>I am currently studying software development engineering, and I am seeking to gain experience in
-            programming and the field by working as a front-end developer.<br><br></p>
-          <p>In my free time, I enjoy reading manga and playing video games. When I play, I often think about how the
-            user interface was coded and how I could recreate it myself. I also wonder how the game was developed
-            overall. Additionally, I am taking courses to improve my abilities, learn new programming languages, and
-            explore new technologies.</p>
+          <p>Hello! My name is Luis, and I am a junior front-end developer. Although I’m relatively new to the field, I am eager to improve my skills and continue learning as much as possible.<br><br></p>
+          <p>I am currently studying software development engineering and am seeking hands-on experience in the field by working as a front-end developer.<br><br></p>
+          <p>In my free time, I enjoy reading manga and playing video games. When playing, I often think about how the user interface was designed and how I could recreate it myself. I also reflect on how the overall game was developed. In addition, I am taking courses to enhance my abilities, learn new programming languages, and explore new technologies.<br><br></p>
+          <p>I am actively looking for opportunities as a Junior Front-End Developer, where I can apply and expand my technical skills, collaborate on meaningful projects, and continue growing in the web development field.</p>
+          
         </div>
         <div class="skills">
           <h2>Skills</h2>
@@ -99,6 +106,10 @@
         <p>If you want to watch my projects more in detail, <a href="./projects.html">click here!</a></p>
       </div>
     </section>
+    <div id="back-button" onclick="topFunction()">
+      <p>Back to top</p>
+      <img src="./resources/img/arrow.png">
+    </div>
   </main>
   <footer>
     <div class="contact-button">
